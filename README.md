@@ -12,6 +12,6 @@ let btn = UIButton()
 btn.XX_setTitleColor(.Color_333844, for: .normal)
 
 view.XX_skinDidChangeBlock { view in
-   guard let view = view as? UIView { else return}
+   guard let view = view as? UIView else { return}
    view.backgroundColor = XXSkinManager.shared.isDarkMode() ? .red : .blue
 }
